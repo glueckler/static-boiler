@@ -468,6 +468,31 @@ a {
 	color: #d59541;
 }
 
+ul, ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.reveal-item {
+	opacity: 0;
+	-webkit-transition: all 1.0s ease-out;
+	transition: all 1.0s ease-out;
+	-webkit-transform: scale(.98);
+	        transform: scale(.98);
+
+}
+
+.reveal-item--is-visible {
+		opacity: 1;
+		-webkit-transform: none;
+		        transform: none;
+	}
+
+.site-footer__text {
+		text-align: center;
+	}
+
 
 
 
