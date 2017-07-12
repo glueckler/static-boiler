@@ -493,7 +493,13 @@ ul, ol {
 		text-align: center;
 	}
 
+@media (min-width: 530px) {
+  }
 
+@media (min-width: 800px) {
+	}
 
+@media (min-width: 1010px) {
+	}
 
 

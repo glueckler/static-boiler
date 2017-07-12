@@ -10338,9 +10338,14 @@ var _RevealOnScroll = __webpack_require__(2);
 
 var _RevealOnScroll2 = _interopRequireDefault(_RevealOnScroll);
 
+var _DavidLazyLoad = __webpack_require__(4);
+
+var _DavidLazyLoad2 = _interopRequireDefault(_DavidLazyLoad);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 new _RevealOnScroll2.default((0, _jquery2.default)(".site-footer"), "100%");
+var davidLazyLoad = new _DavidLazyLoad2.default();
 
 /***/ }),
 /* 2 */
@@ -11171,6 +11176,45 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
   Waypoint.Adapter = NoFrameworkAdapter
 }())
 ;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var DavidLazyLoad = function () {
+	function DavidLazyLoad() {
+		_classCallCheck(this, DavidLazyLoad);
+
+		this.fadeInImages();
+	}
+
+	_createClass(DavidLazyLoad, [{
+		key: 'fadeInImages',
+		value: function fadeInImages() {
+			[].forEach.call(document.querySelectorAll('img.d-lazy[data-src]'), function (img) {
+				img.setAttribute('srcset', img.getAttribute('data-src'));
+				img.onload = function () {
+					img.removeAttribute('data-src');
+				};
+			});
+		}
+	}]);
+
+	return DavidLazyLoad;
+}();
+
+exports.default = DavidLazyLoad;
 
 /***/ })
 /******/ ]);
