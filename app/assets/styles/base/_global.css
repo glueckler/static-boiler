@@ -1,5 +1,5 @@
 body {
-	font-family: courier;
+	font-family: Montserrat, courier;
 	color: #333;
 }
 
@@ -20,4 +20,8 @@ ul, ol {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+}
+
+.clear-fix {
+  @mixin clearfix;
 }
