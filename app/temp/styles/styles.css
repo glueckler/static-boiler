@@ -467,6 +467,8 @@ img {
 a {
   text-decoration: none;
   color: #000;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
 }
 
 a:hover {
@@ -563,7 +565,23 @@ p {
 
     font-family: bevan;
     font-size: 2.1rem;
+  }
 
+.about__social-link:hover {
+      color: #3939c6;
+    }
+
+.about__git-hub-link {
+    color: #3939c6;
+    text-decoration: underline;
+  }
+
+.about__fa-hyper-link {
+    -webkit-transform: scale(.85) rotate(-45deg);
+            transform: scale(.85) rotate(-45deg);
+    opacity: .5;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
   }
 
 .about__contact {
@@ -603,6 +621,11 @@ p {
 
   }
 
+.about__sub-title:hover a .about__fa-hyper-link {
+      opacity: 1;
+      color: #3939c6;
+    }
+
 .about__details {
     font-size: .8rem;
     margin-top: 1em;
@@ -612,14 +635,3 @@ p {
     font-size: .8rem;
     line-height: 1.5;
   }
-
-@media (min-width: 530px) {
-  }
-
-@media (min-width: 800px) {
-	}
-
-@media (min-width: 1010px) {
-	}
-
-

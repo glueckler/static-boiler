@@ -15,6 +15,7 @@ img {
 a {
   text-decoration: none;
   color: #000;
+  transition: all .2s ease-out;
   &:hover {
     opacity: .8;
   }

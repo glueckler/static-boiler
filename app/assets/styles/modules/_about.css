@@ -4,7 +4,23 @@
 
     font-family: bevan;
     font-size: 2.1rem;
+  }
 
+  &__social-link {
+    &:hover {
+      color: $link-blue;
+    }
+  }
+
+  &__git-hub-link {
+    color: $link-blue;
+    text-decoration: underline;
+  }
+
+  &__fa-hyper-link {
+    transform: scale(.85) rotate(-45deg);
+    opacity: .5;
+    transition: all .2s ease-out;
   }
 
   &__contact {
@@ -41,6 +57,11 @@
     @mixin semi-bold;
     font-size: 1.1rem;
     margin-top: .5rem;
+
+    &:hover a .about__fa-hyper-link {
+      opacity: 1;
+      color: #3939c6;
+    }
 
   }
 
