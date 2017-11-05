@@ -4,7 +4,6 @@
 @import "base/_global";
 @import "base/_reveal-item";
 
-@import "modules/_site-footer";
 @import "modules/_layout";
 @import "modules/_about";
 

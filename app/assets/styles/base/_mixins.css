@@ -23,3 +23,15 @@
 		display: table;
 	}
 }
+
+@define-mixin bold {
+  font-weight: 600;
+}
+
+@define-mixin semi-bold {
+  font-weight: 500;
+}
+
+@define-mixin details-font {
+  font-size: .8rem;
+}

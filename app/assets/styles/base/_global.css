@@ -13,7 +13,11 @@ img {
 }
 
 a {
-	color: $main-orange;
+  text-decoration: none;
+  color: #000;
+  &:hover {
+    opacity: .8;
+  }
 }
 
 ul, ol {
@@ -22,6 +26,19 @@ ul, ol {
 	list-style: none;
 }
 
+p {
+  margin: 0;
+  margin-top: .3em;
+}
+
 .clear-fix {
   @mixin clearfix;
+}
+
+.bold {
+  @mixin bold;
+}
+
+.semi-bold {
+  @mixin semi-bold;
 }

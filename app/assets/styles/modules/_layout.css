@@ -13,4 +13,27 @@
 
   }
 
+  &__flex-parent {
+    display: flex;
+
+  }
+
+  &--margin-top-med {
+    margin-top: 1.1em;
+  }
+
+  &__col {
+    width: 50%;
+    display: inline-block;
+  }
+
+  &__blurb {
+    margin-top: 1em;
+  }
+
+  &__contact {
+    display: flex;
+    justify-content: space-between;
+  }
+
 }

@@ -8,16 +8,16 @@
   <meta name="description" content="Dean Glueckler's online resume">
   <link rel="shortcut icon" href="favicon.ico" />
 
-  <!-- FONTSFONTSFONTSFONTSFONTSFONTSFONTS -->
-  <link href="https://fonts.googleapis.com/css?family=Bevan|Montserrat" rel="stylesheet">
 
-  <!-- the following is a comment for the usemin package-->
-  <!-- build:css assets/styles/styles.css-->
+  <link href="https://fonts.googleapis.com/css?family=Bevan|Montserrat:400,500,600" rel="stylesheet">
+
+
+
   <link rel="stylesheet" href="temp/styles/styles.css">
-  <!-- endbuild -->
-  <!-- build:js assets/scripts/Vendor.js -->
+
+
   <script src="/temp/scripts/Vendor.js"></script>
-  <!-- endbuild -->
+
 </head>
 <body>
   <div class="layout__wrapper">
@@ -28,143 +28,157 @@
       </div>
     </header>
 
-    <div class="about__contact">
-      <p>ph ~ 438 827 0176</p>
-      <p>ws ~ deanglueckler.com</p>
-      <p>em ~ glueckler@gmail.com</p>
-      <p>in ~ linkedin.com/in/glueckler</p>
-    </div>
+    <ul class="about__contact layout__contact">
+      <li>ph ~ <span class="about__contact--bold-info">438 827 0176</span></li>
+      <li>git ~ <span class="about__contact--bold-info"><a target="blank" href="https://github.com/glueckler">github.com/glueckler</a></span></li>
+      <li>em ~ <span class="about__contact--bold-info">glueckler@gmail.com</span></li>
+      <li>in ~ <span class="about__contact--bold-info"><a target="blank" href="https://www.linkedin.com/in/glueckler/">linkedin.com/in/glueckler</a></span></li>
+      <li>loc ~ <span class="about__contact--bold-info">Vancouver, BC</span></li>
+    </ul>
 
     <div class="about__objective">
-      <p>With the logic of an engineer, flow of an artist, <br>passion of new found vocation, <br>and the training of intense immersion.<br>  I'll make great things with you.</p>
-    </div>
-
-    <div class="clear-fix"></div>
-
-    <!--EXPERIENCE -->
-
-    <div class="about__experience">
       <div class="about__title">
-        Experience
+        summary
       </div>
-
-      <!-- Island Fishing Boat Rentals -->
-
-      <div class="about__sub-title">
-        Island Fishing Boat Rentals, Port Alberni BC, Summer 2017
-      </div>
-
-      <div class="about__details">
-        <p>A freelance project to experience a complete site build</p>
-        <p>Designed a modern website with Sketch</p>
-        <p>Developed and reusable build system the site from the ground up</p>
-        <p>Wrote ES6 Javascript</p>
-        <p>Used Gulp to automate tasks, and many other modules for professional distibution</p>
-      </div>
-
-      <!-- Vital Gril -->
-
-      <div class="about__sub-title">
-        Vital Grill, Montreal QC, Early 2017
-      </div>
-
-      <div class="about__details">
-        <p>Worked on contracted tasks to improve site and fix bugs</p>
-        <p>Wrote organized code within a chaotic existing WordPress site</p>
-        <p>Designed Front-End Elements to match the rest of the site design</p>
-      </div>
-
-      <!-- Pete Progr -->
-
-      <div class="about__sub-title">
-        PeteProgr.zone, Early 2017
-      </div>
-
-      <div class="about__details">
-        <p>A personal project to familiarize myself with minimal, attractive widgets</p>
-        <p>Learnt and experimented with libraries such as Angular.js, BootStrap, and JQuery</p>
-        <p>Pacticed working with numerous API's (Wikipedia, Twitch, OpenWeatherMap, etc)</p>
-      </div>
-
+      <p>
+        Day after day, my goal is to be the best full stack developer that I can be, but with emphasis on front end.  User experience will always be a priority in my work and styling a website comes naturally.  I'm less interested in silly debates about frameworks than I am about actually learning them, and choosing the right one for the job.  Plus I'm confident diving into any new stack and dancing with it gracefully.  I have an immersive development education, the logic of an engineer, and the flow of an artist at my back.  Let’s work together!
+      </p>
     </div>
 
-    <!--PROGRAMMING LANGUAGES-->
 
-    <div class="about__programming-languages">
 
-      <div class="about__title">
-        Programming Languages
-      </div>
+    <main class="layout__flex-parent layout--margin-top-med">
+      <section class="layout__col">
+        <article class="about__title">projects</article>
+        <div class="layout__blurb">
+          <div class="about__sub-title"><a target="blank" href="http://deanpete.com/">Dean Pete</a></div>
+          <div class="about__details">
+            <p>PHP | PostCSS | Gulp | jQuery</p>
+            <p>A portfolio with a bit more than just websites</p>
+            <p><a class="about__git-hub-link" target="blank" href="https://github.com/lankypete/dean-pete">github.com/lankypete/dean-pete</a></p>
+          </div>
+        </div>
+        <div class="layout__blurb">
+          <div class="about__sub-title"><a target="blank" href="http://islandfishingboatrentals.ca/">Island Fishing Boat Rentals</a></div>
+          <div class="about__details">
+            <p>Sketch | Gulp | ES6 | PostCSS</p>
+            <p>A modern one page project built from scratch</p>
+            <p><a class="about__git-hub-link" target="blank" href="https://github.com/lankypete/ifbr">github.com/lankypete/IFBR</a></p>
+          </div>
+        </div>
+        <div class="layout__blurb">
+          <div class="about__sub-title"><a target="blank" href="http://www.peteprogr.zone/">peteprogr.zone</a></div>
+          <div class="about__details">
+            <p>BootStrap | Angular | jQuery</p>
+            <p>Experimental, minimal API widgets</p>
+            <p><a class="about__git-hub-link" target="blank" href="https://github.com/lankypete/peteprogr">github.com/lankypete/peteprogr</a></p>
+          </div>
+        </div>
+        <div class="layout__blurb">
+          <div class="about__sub-title"><a target="blank" href="">Chatty</a></div>
+          <div class="about__details">
+            <p>React | WebSockets (ws) | SASS | Webpack</p>
+            <p>description</p>
+            <p><a class="about__git-hub-link" target="blank" href="https://github.com/lankypete/chatty-app">github.com/lankypete/chatty-app</a></p>
+          </div>
+        </div>
+        <div class="layout__blurb">
+          <div class="about__sub-title"><a target="blank" href="http://underscormusic.com/">underscor music</a></div>
+          <div class="about__details">
+            <p>Wordpress | jQuery | mySQL</p>
+            <p>A music blog with multiple contributors</p>
+            <p><a class="about__git-hub-link" target="blank" href="https://github.com/lankypete/underscor">github.com/lankypete/underscor</a></p>
+          </div>
+        </div>
+        <div class="layout__blurb">
+          <div class="about__sub-title"><a target="blank" href="#">Tweetr</a></div>
+          <div class="about__details">
+            <p>Mongo | Express | jQuery | SASS</p>
+            <p>A simple twitter clone with data</p>
+            <p><a class="about__git-hub-link" target="blank" href="">https://github.com/lankypete/tweeter</a></p>
+          </div>
+        </div>
+        <div class="layout__blurb">
+          <div class="about__sub-title"><a target="blank" href="#">Tinyapp</a></div>
+          <div class="about__details">
+            <p>Express | Node</p>
+            <p>A url shortener, with user registration and login</p>
+            <p><a class="about__git-hub-link" target="blank" href="https://github.com/lankypete/tiny-app">github.com/lankypete/tiny-app</a></p>
+          </div>
+        </div>
+      </section>
 
-      <div class="about__language-scores">
-        HTML 4/5 <br> CSS (PostCSS, SASS) 4/5 <br> Javascript (JQuery, Node.js) 3/5 <br> PHP (Wordpress) 2/5
-      </div>
+      <section class="layout__col">
+        <article class="about__title">experience</article>
+        <div class="layout__blurb">
+          <div class="about__sub-title"><a target="blank" href="http://vitalgrill.com/">Vital Grill</a></div>
+          <div class="about__details">
+            <p>Wordpress | jQuery</p>
+            <p>Real world experience maintaining and updating an existing project.</p>
+          </div>
+        </div>
+        <article class="about__title">education</article>
+        <div class="layout__blurb">
+          <div class="about__sub-title"><a target="blank" href="https://www.lighthouselabs.ca/">Lighthouse Labs, Vancouver BC</a></div>
+          <div class="about__details">
+            <p>Immersive web development bootcamp</p>
+            <p>API's, Databases, Full Stack Development</p>
+          </div>
 
-    </div>
+          <div class="about__sub-title">University of Calgary, Calgary AB</div>
+          <div class="about__details">
+            <p>Bachelor or Science in Mechanical Engineering</p>
+          </div>
 
-    <!-- EDUCATION -->
+          <div class="about__sub-title">Online Courses</div>
+          <div class="about__details">
+            <p>Web Development Nano Degree (udacity.com)</p>
+            <p>Git a Web Developer Job (Brad Schiff, udemy.com)</p>
+          </div>
+        </div>
+        <article class="about__title">languages</article>
+        <div class="layout__blurb">
+          <ul class="about__skill-list">
+            <li>HTML5 | SASS/PostCSS | Javascript/ES6</li>
+            <li>React | jQuery | Rails</li>
+            <li>Wordpress | PHP</li>
+            <li>Express | EJS | WebSockets</li>
+            <li>SQL | Mondo DB | Knex</li>
+            <li>BootStrap | Foundation</li>
+            <li>Heroku | Cyberduck</li>
+            <li>Git | Github</li>
+          </ul>
+        </div>
+        <article class="about__title">other skills</article>
+        <div class="layout__blurb">
+          <ul class="about__skill-list">
+            <li>Invision | Photoshop | Sketch</li>
+            <li>Wix | SquareSpace</li>
+            <li>Full Calendar | Open Weather</li>
+            <li>Matlab | Solidworks</li>
+          </ul>
+        </div>
+        <article class="about__title">other languages</article>
+        <div class="layout__blurb">
+          <div class="about__details">
+            Un peu de francais
+          </div>
+        </div>
+      </section>
 
-    <div class="about__education">
 
-      <div class="about__title">
-        Education
-      </div>
 
-      <!-- Lighthouse Labs -->
 
-      <div class="about__sub-title">
-        Lighthouse Labs, Vancouver BC, Current
-      </div>
-
-      <div class="about__details">
-        <p>Web Development Bootcamp</p>
-      </div>
-
-      <!-- University of Calgary -->
-
-      <div class="about__sub-title">
-        University of Calgary, Calgary AB, 2009 - 2014
-      </div>
-
-      <div class="about__details">
-        <p>Bachelor of Science in Mechanical Engineering</p>
-      </div>
-
-      <!-- Online -->
-
-      <div class="about__sub-title">
-        Online Courses
-      </div>
-
-      <div class="about__details">
-        <p>Web Development Nano Degree (Udacity.com)</p>
-        <p>Git a Web Developer Job (Udemy.com)</p>
-      </div>
-
-    </div>
-
-    <!--OTHER LANGUAGES -->
-
-    <div class="about__languages">
-
-      <div class="about__title">
-        Other Spoken Languages
-      </div>
-
-      <div class="about__sub-title">
-        Un peu de francais
-      </div>
-
-    </div>
+    </main>
 
   </div>
 
 
 
 
-  <!-- build:js assets/scripts/App.js -->
+
   <script src="/temp/scripts/App.js"></script>
-  <!-- endbuild -->
+
 
 </body>
 </html>

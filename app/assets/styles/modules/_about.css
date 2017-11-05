@@ -3,53 +3,55 @@
   &__header {
 
     font-family: bevan;
-    font-size: 2.8rem;
+    font-size: 2.1rem;
 
   }
 
   &__contact {
 
-    font-size: 1rem;
-    line-height: .5rem;
-    float: left;
+    font-size: .65rem;
+    margin-top: 1em;
 
+    &--bold-info {
+      @mixin bold;
+      font-size: 1.1em;
+    }
 
   }
 
   &__objective {
 
-    float: right;
-    line-height: 1.3rem;
+    line-height: 1.35;
+    margin-top: 1.7em;
+    font-size: .9em;
 
   }
 
   &__title {
 
     font-family: bevan;
-    font-size: 1.7rem;
+    color: #444;
+    font-size: 1.4rem;
     margin-top: .8rem;
 
   }
 
   &__sub-title {
 
-    font-size: 1.3rem;
+    @mixin semi-bold;
+    font-size: 1.1rem;
     margin-top: .5rem;
 
   }
 
   &__details {
-
-    line-height: .6rem;
-
+    @mixin details-font;
+    margin-top: 1em;
   }
 
-  &__language-scores {
-
-    @inherit: &__sub-title;
-    font-size: 1.1rem;
-    line-height: 1.6rem;
-
+  &__skill-list {
+    @mixin details-font;
+    line-height: 1.5;
   }
 
 }
