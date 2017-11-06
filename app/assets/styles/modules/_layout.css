@@ -14,8 +14,9 @@
   }
 
   &__flex-parent {
-    display: flex;
-
+    @mixin am {
+      display: flex;
+    }
   }
 
   &--margin-top-med {
@@ -23,8 +24,10 @@
   }
 
   &__col {
-    width: 50%;
-    display: inline-block;
+    @mixin am {
+      width: 50%;
+      display: inline-block;
+    }
   }
 
   &__blurb {
@@ -32,8 +35,14 @@
   }
 
   &__contact {
-    display: flex;
-    justify-content: space-between;
+    li {
+      margin-top: 5px;
+    }
+    @mixin am {
+      margin-top: 0;
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
 }

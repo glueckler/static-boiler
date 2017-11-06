@@ -532,34 +532,47 @@ p {
   }
 	}
 
-.layout__flex-parent {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+@media (min-width: 800px) {
 
+.layout__flex-parent {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex
   }
+	}
 
 .layout--margin-top-med {
     margin-top: 1.1em;
   }
 
+@media (min-width: 800px) {
+
 .layout__col {
-    width: 50%;
-    display: inline-block;
+      width: 50%;
+      display: inline-block
   }
+	}
 
 .layout__blurb {
     margin-top: 1em;
   }
 
+.layout__contact li {
+      margin-top: 5px;
+    }
+
+@media (min-width: 800px) {
+
 .layout__contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+      margin-top: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between
   }
+	}
 
 .about__header {
 
@@ -634,4 +647,8 @@ p {
 .about__skill-list {
     font-size: .8rem;
     line-height: 1.5;
+  }
+
+.about__resume-download {
+    margin:.9em 0;
   }
