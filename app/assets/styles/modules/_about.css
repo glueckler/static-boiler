@@ -56,7 +56,7 @@
 
     @mixin semi-bold;
     font-size: 1.1rem;
-    margin-top: .5rem;
+    margin-top: .9rem;
 
     &:hover a .about__fa-hyper-link {
       opacity: 1;
@@ -67,7 +67,7 @@
 
   &__details {
     @mixin details-font;
-    margin-top: 1em;
+    margin-top: .5em;
   }
 
   &__skill-list {
@@ -76,7 +76,7 @@
   }
 
   &__resume-download {
-    margin:.9em 0;
+    margin: 2.8em 0 0;
   }
 
 }
