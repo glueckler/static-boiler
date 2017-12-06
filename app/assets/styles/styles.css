@@ -1,8 +1,6 @@
-@import "normalize.css";
 @import "base/_variables";
 @import "base/_mixins";
 @import "base/_global";
 @import "base/_reveal-item";
 
 @import "modules/_layout";
-@import "modules/_about";

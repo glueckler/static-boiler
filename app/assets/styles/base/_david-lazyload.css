@@ -1,8 +1,0 @@
-img.d-lazy {
-  opacity: 1;
-  transition: opacity 0.3s;
-}
-
-img.d-lazy[data-src] {
-  opacity: 0;
-}
