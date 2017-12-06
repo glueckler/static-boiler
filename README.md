@@ -1,4 +1,4 @@
 # Dean Glueckler
 
-please see (deanglueckler.com)[http://deanglueckler.com]
+[i'm here](http://deanglueckler.com)
 
