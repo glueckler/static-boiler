@@ -1,5 +1,7 @@
+/* * * * * Global * * * * */
+
 body {
-	font-family: Montserrat, courier;
+	font-family: courier;
 	color: #333;
 }
 
@@ -40,10 +42,6 @@ small {
   @mixin clearfix;
 }
 
-.bold {
-  @mixin bold;
-}
-
-.semi-bold {
-  @mixin semi-bold;
+.viewport {
+  min-height: 100vh;
 }

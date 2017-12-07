@@ -1,3 +1,4 @@
-import RevealOnScroll from "./base/RevealOnScroll";
+import $ from 'jquery';
+import RevealOnScroll from "./modules/RevealOnScroll";
 
-new RevealOnScroll($(".site-footer"),"100%");
+new RevealOnScroll($(".footer"), "98%");

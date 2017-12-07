@@ -60,93 +60,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _RevealOnScroll = __webpack_require__(1);
-
-var _RevealOnScroll2 = _interopRequireDefault(_RevealOnScroll);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-new _RevealOnScroll2.default($(".site-footer"), "100%");
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _jquery = __webpack_require__(2);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-var _noframework = __webpack_require__(3);
-
-var _noframework2 = _interopRequireDefault(_noframework);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var RevealOnScroll = function () {
-	function RevealOnScroll(els, offset) {
-		_classCallCheck(this, RevealOnScroll);
-
-		this.itemsToReveal = els;
-		this.offsetPercentage = offset;
-		this.hideInitially();
-		this.createWaypoints();
-	}
-
-	_createClass(RevealOnScroll, [{
-		key: 'hideInitially',
-		value: function hideInitially() {
-			this.itemsToReveal.addClass('reveal-item');
-		}
-	}, {
-		key: 'createWaypoints',
-		value: function createWaypoints() {
-			//to be used in offset
-			var that = this;
-			//function to create a new waypoint for each element we'd like
-			this.itemsToReveal.each(function () {
-				var currentItem = this;
-				new Waypoint({
-					//DOM element we'd want to watch scrolling down the page
-					element: currentItem,
-					//the handler action we'd like to act on each element
-					handler: function handler() {
-						(0, _jquery2.default)(currentItem).addClass('reveal-item--is-visible');
-					},
-					//set the viewport offset so waypoints will act sooner on scroll
-					offset: that.offsetPercentage
-				});
-			});
-		}
-	}]);
-
-	return RevealOnScroll;
-}();
-
-exports.default = RevealOnScroll;
-
-/***/ }),
-/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10404,6 +10322,92 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+var _RevealOnScroll = __webpack_require__(2);
+
+var _RevealOnScroll2 = _interopRequireDefault(_RevealOnScroll);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+new _RevealOnScroll2.default((0, _jquery2.default)(".footer"), "98%");
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+var _noframework = __webpack_require__(3);
+
+var _noframework2 = _interopRequireDefault(_noframework);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var RevealOnScroll = function () {
+  function RevealOnScroll(els, offset) {
+    _classCallCheck(this, RevealOnScroll);
+
+    this.itemsToReveal = els;
+    this.offsetPercentage = offset;
+    this.hideInitially();
+    this.createWaypoints();
+  }
+
+  _createClass(RevealOnScroll, [{
+    key: 'hideInitially',
+    value: function hideInitially() {
+      this.itemsToReveal.addClass('reveal-item');
+    }
+  }, {
+    key: 'createWaypoints',
+    value: function createWaypoints() {
+      //to be used in offset
+      var that = this;
+      //function to create a new waypoint for each element we'd like
+      this.itemsToReveal.each(function () {
+        var currentItem = this;
+        new Waypoint({
+          //DOM element we'd want to watch scrolling down the page
+          element: currentItem,
+          //the handler action we'd like to act on each element
+          handler: function handler() {
+            (0, _jquery2.default)(currentItem).addClass('reveal-item--is-visible');
+          },
+          //set the viewport offset so waypoints will act sooner on scroll
+          offset: that.offsetPercentage
+        });
+      });
+    }
+  }]);
+
+  return RevealOnScroll;
+}();
+
+exports.default = RevealOnScroll;
 
 /***/ }),
 /* 3 */

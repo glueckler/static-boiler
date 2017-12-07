@@ -23,16 +23,3 @@
 		display: table;
 	}
 }
-
-@define-mixin bold {
-  font-weight: 600;
-}
-
-@define-mixin semi-bold {
-  font-weight: 500;
-}
-
-@define-mixin details-font {
-  line-height: 1.4;
-  font-size: .8rem;
-}
